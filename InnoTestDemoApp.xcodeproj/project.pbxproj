@@ -27,6 +27,8 @@
 		AD676A1126382C100029BFAB /* Decisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A0426382C100029BFAB /* Decisions.swift */; };
 		AD676A1226382C100029BFAB /* BadResponseStatusCodeDecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A0526382C100029BFAB /* BadResponseStatusCodeDecision.swift */; };
 		AD676A1326382C100029BFAB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A0626382C100029BFAB /* Router.swift */; };
+		AD676A22263832250029BFAB /* JsonplaceholderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A20263832250029BFAB /* JsonplaceholderRequest.swift */; };
+		AD676A23263832250029BFAB /* JsonplaceholderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A21263832250029BFAB /* JsonplaceholderData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		AD676A0426382C100029BFAB /* Decisions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decisions.swift; sourceTree = "<group>"; };
 		AD676A0526382C100029BFAB /* BadResponseStatusCodeDecision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadResponseStatusCodeDecision.swift; sourceTree = "<group>"; };
 		AD676A0626382C100029BFAB /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		AD676A20263832250029BFAB /* JsonplaceholderRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonplaceholderRequest.swift; sourceTree = "<group>"; };
+		AD676A21263832250029BFAB /* JsonplaceholderData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonplaceholderData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 		AD6769EE26382BD70029BFAB /* API */ = {
 			isa = PBXGroup;
 			children = (
+				AD676A21263832250029BFAB /* JsonplaceholderData.swift */,
+				AD676A20263832250029BFAB /* JsonplaceholderRequest.swift */,
 				AD6769EF26382BD70029BFAB /* ApiManager.swift */,
 			);
 			path = API;
@@ -226,8 +232,10 @@
 				AD6769F226382BD70029BFAB /* ApiManager.swift in Sources */,
 				AD676A0826382C100029BFAB /* NetworkRouter.swift in Sources */,
 				AD676A1326382C100029BFAB /* Router.swift in Sources */,
+				AD676A23263832250029BFAB /* JsonplaceholderData.swift in Sources */,
 				AD676A0A26382C100029BFAB /* ParameterEncoding.swift in Sources */,
 				AD676A0926382C100029BFAB /* HTTPTask.swift in Sources */,
+				AD676A22263832250029BFAB /* JsonplaceholderRequest.swift in Sources */,
 				AD676A1126382C100029BFAB /* Decisions.swift in Sources */,
 				AD6769DB26380FA80029BFAB /* ViewController.swift in Sources */,
 				AD676A1226382C100029BFAB /* BadResponseStatusCodeDecision.swift in Sources */,
@@ -312,7 +320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -367,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

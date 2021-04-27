@@ -25,6 +25,18 @@ class ApiManager {
     let router = Router()
     
     var domain: ApiDomain = ApiDomain()
+    
+    func getJsonplaceholder(completion: @escaping (Result<[JsonplaceholderData], Error>) ->()) {
+        let req = JsonplaceholderRequest()
+        router.send(req, decisions: Decisions.shared.unEncrypted) { (result) in
+            switch result {
+            case .success(let model):
+                completion(.success(model))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
 }
 
 
