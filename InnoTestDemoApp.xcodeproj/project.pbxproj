@@ -30,6 +30,12 @@
 		AD676A22263832250029BFAB /* JsonplaceholderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A20263832250029BFAB /* JsonplaceholderRequest.swift */; };
 		AD676A23263832250029BFAB /* JsonplaceholderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A21263832250029BFAB /* JsonplaceholderData.swift */; };
 		AD676A30263835A50029BFAB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A2F263835A50029BFAB /* ViewModel.swift */; };
+		AD676A38263839F30029BFAB /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A37263839F30029BFAB /* UIViewExtensions.swift */; };
+		AD676A3B26383A050029BFAB /* FCUITableView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A3A26383A050029BFAB /* FCUITableView_Extension.swift */; };
+		AD676A4226383AAB0029BFAB /* FCBaseDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A4026383AAB0029BFAB /* FCBaseDialog.swift */; };
+		AD676A4326383AAB0029BFAB /* FCBaseDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD676A4126383AAB0029BFAB /* FCBaseDialog.xib */; };
+		AD676A4826383AD10029BFAB /* FCLoadingDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD676A4626383AD10029BFAB /* FCLoadingDialog.xib */; };
+		AD676A4926383AD10029BFAB /* FCLoadingDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A4726383AD10029BFAB /* FCLoadingDialog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +64,13 @@
 		AD676A20263832250029BFAB /* JsonplaceholderRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonplaceholderRequest.swift; sourceTree = "<group>"; };
 		AD676A21263832250029BFAB /* JsonplaceholderData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonplaceholderData.swift; sourceTree = "<group>"; };
 		AD676A2F263835A50029BFAB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		AD676A34263839D10029BFAB /* JsonplaceholderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonplaceholderTableViewCell.swift; sourceTree = "<group>"; };
+		AD676A37263839F30029BFAB /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		AD676A3A26383A050029BFAB /* FCUITableView_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCUITableView_Extension.swift; sourceTree = "<group>"; };
+		AD676A4026383AAB0029BFAB /* FCBaseDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCBaseDialog.swift; sourceTree = "<group>"; };
+		AD676A4126383AAB0029BFAB /* FCBaseDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCBaseDialog.xib; sourceTree = "<group>"; };
+		AD676A4626383AD10029BFAB /* FCLoadingDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCLoadingDialog.xib; sourceTree = "<group>"; };
+		AD676A4726383AD10029BFAB /* FCLoadingDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCLoadingDialog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +107,7 @@
 				AD6769EE26382BD70029BFAB /* API */,
 				AD6769D626380FA80029BFAB /* AppDelegate.swift */,
 				AD6769D826380FA80029BFAB /* SceneDelegate.swift */,
+				AD676A3D26383A180029BFAB /* Extension */,
 				AD6769DA26380FA80029BFAB /* ViewController.swift */,
 				AD676A2F263835A50029BFAB /* ViewModel.swift */,
 				AD6769DC26380FA80029BFAB /* Main.storyboard */,
@@ -158,6 +172,35 @@
 			path = Decisions;
 			sourceTree = "<group>";
 		};
+		AD676A3D26383A180029BFAB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AD676A3A26383A050029BFAB /* FCUITableView_Extension.swift */,
+				AD676A37263839F30029BFAB /* UIViewExtensions.swift */,
+				AD676A3F26383AAB0029BFAB /* Base */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		AD676A3F26383AAB0029BFAB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AD676A4026383AAB0029BFAB /* FCBaseDialog.swift */,
+				AD676A4126383AAB0029BFAB /* FCBaseDialog.xib */,
+				AD676A4526383AD10029BFAB /* LoadingDialog */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		AD676A4526383AD10029BFAB /* LoadingDialog */ = {
+			isa = PBXGroup;
+			children = (
+				AD676A4626383AD10029BFAB /* FCLoadingDialog.xib */,
+				AD676A4726383AD10029BFAB /* FCLoadingDialog.swift */,
+			);
+			path = LoadingDialog;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -216,8 +259,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD6769E326380FA80029BFAB /* LaunchScreen.storyboard in Resources */,
+				AD676A4326383AAB0029BFAB /* FCBaseDialog.xib in Resources */,
 				AD6769E026380FA80029BFAB /* Assets.xcassets in Resources */,
 				AD6769DE26380FA80029BFAB /* Main.storyboard in Resources */,
+				AD676A4826383AD10029BFAB /* FCLoadingDialog.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,13 +273,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD676A4926383AD10029BFAB /* FCLoadingDialog.swift in Sources */,
+				AD676A38263839F30029BFAB /* UIViewExtensions.swift in Sources */,
 				AD676A0D26382C100029BFAB /* Observables.swift in Sources */,
 				AD676A0B26382C100029BFAB /* Decision.swift in Sources */,
 				AD676A1026382C100029BFAB /* RetryDecision.swift in Sources */,
 				AD676A0C26382C100029BFAB /* Request.swift in Sources */,
 				AD6769F226382BD70029BFAB /* ApiManager.swift in Sources */,
+				AD676A3B26383A050029BFAB /* FCUITableView_Extension.swift in Sources */,
 				AD676A0826382C100029BFAB /* NetworkRouter.swift in Sources */,
 				AD676A1326382C100029BFAB /* Router.swift in Sources */,
+				AD676A4226383AAB0029BFAB /* FCBaseDialog.swift in Sources */,
 				AD676A23263832250029BFAB /* JsonplaceholderData.swift in Sources */,
 				AD676A0A26382C100029BFAB /* ParameterEncoding.swift in Sources */,
 				AD676A0926382C100029BFAB /* HTTPTask.swift in Sources */,
