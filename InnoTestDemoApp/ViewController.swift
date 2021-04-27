@@ -8,18 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    lazy var vm: JsonplaceholderViewModel = {
+        return JsonplaceholderViewModel()
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        ApiManager.shared.getJsonplaceholder { [weak self] (result) in
-            guard let _ = self else { return }
-            switch result {
-            case .success(let model):
-                print(model.first ?? "")
-            case .failure(let error):
-                print("\(error)")
-            }
+        bind(vm: vm)
+    }
+    
+    private func bind(vm: JsonplaceholderViewModel) {
+        vm.reloadData.addObserver {  (value) in
+            
         }
     }
 }

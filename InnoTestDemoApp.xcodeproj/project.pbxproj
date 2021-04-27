@@ -29,6 +29,7 @@
 		AD676A1326382C100029BFAB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A0626382C100029BFAB /* Router.swift */; };
 		AD676A22263832250029BFAB /* JsonplaceholderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A20263832250029BFAB /* JsonplaceholderRequest.swift */; };
 		AD676A23263832250029BFAB /* JsonplaceholderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A21263832250029BFAB /* JsonplaceholderData.swift */; };
+		AD676A30263835A50029BFAB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A2F263835A50029BFAB /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		AD676A0626382C100029BFAB /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		AD676A20263832250029BFAB /* JsonplaceholderRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonplaceholderRequest.swift; sourceTree = "<group>"; };
 		AD676A21263832250029BFAB /* JsonplaceholderData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonplaceholderData.swift; sourceTree = "<group>"; };
+		AD676A2F263835A50029BFAB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				AD6769D626380FA80029BFAB /* AppDelegate.swift */,
 				AD6769D826380FA80029BFAB /* SceneDelegate.swift */,
 				AD6769DA26380FA80029BFAB /* ViewController.swift */,
+				AD676A2F263835A50029BFAB /* ViewModel.swift */,
 				AD6769DC26380FA80029BFAB /* Main.storyboard */,
 				AD6769DF26380FA80029BFAB /* Assets.xcassets */,
 				AD6769E126380FA80029BFAB /* LaunchScreen.storyboard */,
@@ -235,6 +238,7 @@
 				AD676A23263832250029BFAB /* JsonplaceholderData.swift in Sources */,
 				AD676A0A26382C100029BFAB /* ParameterEncoding.swift in Sources */,
 				AD676A0926382C100029BFAB /* HTTPTask.swift in Sources */,
+				AD676A30263835A50029BFAB /* ViewModel.swift in Sources */,
 				AD676A22263832250029BFAB /* JsonplaceholderRequest.swift in Sources */,
 				AD676A1126382C100029BFAB /* Decisions.swift in Sources */,
 				AD6769DB26380FA80029BFAB /* ViewController.swift in Sources */,
