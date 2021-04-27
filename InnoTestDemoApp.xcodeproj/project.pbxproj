@@ -13,6 +13,20 @@
 		AD6769DE26380FA80029BFAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6769DC26380FA80029BFAB /* Main.storyboard */; };
 		AD6769E026380FA80029BFAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6769DF26380FA80029BFAB /* Assets.xcassets */; };
 		AD6769E326380FA80029BFAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6769E126380FA80029BFAB /* LaunchScreen.storyboard */; };
+		AD6769F226382BD70029BFAB /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6769EF26382BD70029BFAB /* ApiManager.swift */; };
+		AD676A0726382C100029BFAB /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6769F726382C100029BFAB /* APIError.swift */; };
+		AD676A0826382C100029BFAB /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6769F926382C100029BFAB /* NetworkRouter.swift */; };
+		AD676A0926382C100029BFAB /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6769FA26382C100029BFAB /* HTTPTask.swift */; };
+		AD676A0A26382C100029BFAB /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6769FB26382C100029BFAB /* ParameterEncoding.swift */; };
+		AD676A0B26382C100029BFAB /* Decision.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6769FC26382C100029BFAB /* Decision.swift */; };
+		AD676A0C26382C100029BFAB /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6769FD26382C100029BFAB /* Request.swift */; };
+		AD676A0D26382C100029BFAB /* Observables.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6769FF26382C100029BFAB /* Observables.swift */; };
+		AD676A0E26382C100029BFAB /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A0026382C100029BFAB /* Observable.swift */; };
+		AD676A0F26382C100029BFAB /* ParseResultDecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A0226382C100029BFAB /* ParseResultDecision.swift */; };
+		AD676A1026382C100029BFAB /* RetryDecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A0326382C100029BFAB /* RetryDecision.swift */; };
+		AD676A1126382C100029BFAB /* Decisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A0426382C100029BFAB /* Decisions.swift */; };
+		AD676A1226382C100029BFAB /* BadResponseStatusCodeDecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A0526382C100029BFAB /* BadResponseStatusCodeDecision.swift */; };
+		AD676A1326382C100029BFAB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A0626382C100029BFAB /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +38,20 @@
 		AD6769DF26380FA80029BFAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD6769E226380FA80029BFAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD6769E426380FA80029BFAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD6769EF26382BD70029BFAB /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		AD6769F726382C100029BFAB /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		AD6769F926382C100029BFAB /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		AD6769FA26382C100029BFAB /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		AD6769FB26382C100029BFAB /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		AD6769FC26382C100029BFAB /* Decision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decision.swift; sourceTree = "<group>"; };
+		AD6769FD26382C100029BFAB /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		AD6769FF26382C100029BFAB /* Observables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observables.swift; sourceTree = "<group>"; };
+		AD676A0026382C100029BFAB /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		AD676A0226382C100029BFAB /* ParseResultDecision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseResultDecision.swift; sourceTree = "<group>"; };
+		AD676A0326382C100029BFAB /* RetryDecision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetryDecision.swift; sourceTree = "<group>"; };
+		AD676A0426382C100029BFAB /* Decisions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decisions.swift; sourceTree = "<group>"; };
+		AD676A0526382C100029BFAB /* BadResponseStatusCodeDecision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadResponseStatusCodeDecision.swift; sourceTree = "<group>"; };
+		AD676A0626382C100029BFAB /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +84,8 @@
 		AD6769D526380FA80029BFAB /* InnoTestDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				AD6769F626382C100029BFAB /* Service */,
+				AD6769EE26382BD70029BFAB /* API */,
 				AD6769D626380FA80029BFAB /* AppDelegate.swift */,
 				AD6769D826380FA80029BFAB /* SceneDelegate.swift */,
 				AD6769DA26380FA80029BFAB /* ViewController.swift */,
@@ -65,6 +95,58 @@
 				AD6769E426380FA80029BFAB /* Info.plist */,
 			);
 			path = InnoTestDemoApp;
+			sourceTree = "<group>";
+		};
+		AD6769EE26382BD70029BFAB /* API */ = {
+			isa = PBXGroup;
+			children = (
+				AD6769EF26382BD70029BFAB /* ApiManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		AD6769F626382C100029BFAB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AD6769F726382C100029BFAB /* APIError.swift */,
+				AD6769F826382C100029BFAB /* Static Components */,
+				AD6769FE26382C100029BFAB /* Observer */,
+				AD676A0126382C100029BFAB /* Decisions */,
+				AD676A0626382C100029BFAB /* Router.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AD6769F826382C100029BFAB /* Static Components */ = {
+			isa = PBXGroup;
+			children = (
+				AD6769F926382C100029BFAB /* NetworkRouter.swift */,
+				AD6769FA26382C100029BFAB /* HTTPTask.swift */,
+				AD6769FB26382C100029BFAB /* ParameterEncoding.swift */,
+				AD6769FC26382C100029BFAB /* Decision.swift */,
+				AD6769FD26382C100029BFAB /* Request.swift */,
+			);
+			path = "Static Components";
+			sourceTree = "<group>";
+		};
+		AD6769FE26382C100029BFAB /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				AD6769FF26382C100029BFAB /* Observables.swift */,
+				AD676A0026382C100029BFAB /* Observable.swift */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
+		AD676A0126382C100029BFAB /* Decisions */ = {
+			isa = PBXGroup;
+			children = (
+				AD676A0226382C100029BFAB /* ParseResultDecision.swift */,
+				AD676A0326382C100029BFAB /* RetryDecision.swift */,
+				AD676A0426382C100029BFAB /* Decisions.swift */,
+				AD676A0526382C100029BFAB /* BadResponseStatusCodeDecision.swift */,
+			);
+			path = Decisions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +219,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD676A0D26382C100029BFAB /* Observables.swift in Sources */,
+				AD676A0B26382C100029BFAB /* Decision.swift in Sources */,
+				AD676A1026382C100029BFAB /* RetryDecision.swift in Sources */,
+				AD676A0C26382C100029BFAB /* Request.swift in Sources */,
+				AD6769F226382BD70029BFAB /* ApiManager.swift in Sources */,
+				AD676A0826382C100029BFAB /* NetworkRouter.swift in Sources */,
+				AD676A1326382C100029BFAB /* Router.swift in Sources */,
+				AD676A0A26382C100029BFAB /* ParameterEncoding.swift in Sources */,
+				AD676A0926382C100029BFAB /* HTTPTask.swift in Sources */,
+				AD676A1126382C100029BFAB /* Decisions.swift in Sources */,
 				AD6769DB26380FA80029BFAB /* ViewController.swift in Sources */,
+				AD676A1226382C100029BFAB /* BadResponseStatusCodeDecision.swift in Sources */,
+				AD676A0E26382C100029BFAB /* Observable.swift in Sources */,
 				AD6769D726380FA80029BFAB /* AppDelegate.swift in Sources */,
 				AD6769D926380FA80029BFAB /* SceneDelegate.swift in Sources */,
+				AD676A0726382C100029BFAB /* APIError.swift in Sources */,
+				AD676A0F26382C100029BFAB /* ParseResultDecision.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
