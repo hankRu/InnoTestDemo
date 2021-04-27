@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		AD6769D726380FA80029BFAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6769D626380FA80029BFAB /* AppDelegate.swift */; };
 		AD6769D926380FA80029BFAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6769D826380FA80029BFAB /* SceneDelegate.swift */; };
-		AD6769DB26380FA80029BFAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6769DA26380FA80029BFAB /* ViewController.swift */; };
+		AD6769DB26380FA80029BFAB /* JsonplaceholderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6769DA26380FA80029BFAB /* JsonplaceholderVC.swift */; };
 		AD6769DE26380FA80029BFAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6769DC26380FA80029BFAB /* Main.storyboard */; };
 		AD6769E026380FA80029BFAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6769DF26380FA80029BFAB /* Assets.xcassets */; };
 		AD6769E326380FA80029BFAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6769E126380FA80029BFAB /* LaunchScreen.storyboard */; };
@@ -30,19 +30,23 @@
 		AD676A22263832250029BFAB /* JsonplaceholderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A20263832250029BFAB /* JsonplaceholderRequest.swift */; };
 		AD676A23263832250029BFAB /* JsonplaceholderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A21263832250029BFAB /* JsonplaceholderData.swift */; };
 		AD676A30263835A50029BFAB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A2F263835A50029BFAB /* ViewModel.swift */; };
+		AD676A35263839D10029BFAB /* JsonplaceholderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A34263839D10029BFAB /* JsonplaceholderTableViewCell.swift */; };
 		AD676A38263839F30029BFAB /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A37263839F30029BFAB /* UIViewExtensions.swift */; };
 		AD676A3B26383A050029BFAB /* FCUITableView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A3A26383A050029BFAB /* FCUITableView_Extension.swift */; };
 		AD676A4226383AAB0029BFAB /* FCBaseDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A4026383AAB0029BFAB /* FCBaseDialog.swift */; };
 		AD676A4326383AAB0029BFAB /* FCBaseDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD676A4126383AAB0029BFAB /* FCBaseDialog.xib */; };
 		AD676A4826383AD10029BFAB /* FCLoadingDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD676A4626383AD10029BFAB /* FCLoadingDialog.xib */; };
 		AD676A4926383AD10029BFAB /* FCLoadingDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A4726383AD10029BFAB /* FCLoadingDialog.swift */; };
+		AD676A4C26383C320029BFAB /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A4B26383C320029BFAB /* TableViewModel.swift */; };
+		AD676A5126383CD50029BFAB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AD676A5026383CD50029BFAB /* SnapKit */; };
+		AD676A55263843F20029BFAB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AD676A54263843F20029BFAB /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AD6769D326380FA80029BFAB /* InnoTestDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InnoTestDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6769D626380FA80029BFAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD6769D826380FA80029BFAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AD6769DA26380FA80029BFAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD6769DA26380FA80029BFAB /* JsonplaceholderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonplaceholderVC.swift; sourceTree = "<group>"; };
 		AD6769DD26380FA80029BFAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD6769DF26380FA80029BFAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD6769E226380FA80029BFAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,6 +75,7 @@
 		AD676A4126383AAB0029BFAB /* FCBaseDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCBaseDialog.xib; sourceTree = "<group>"; };
 		AD676A4626383AD10029BFAB /* FCLoadingDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCLoadingDialog.xib; sourceTree = "<group>"; };
 		AD676A4726383AD10029BFAB /* FCLoadingDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCLoadingDialog.swift; sourceTree = "<group>"; };
+		AD676A4B26383C320029BFAB /* TableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD676A55263843F20029BFAB /* Kingfisher in Frameworks */,
+				AD676A5126383CD50029BFAB /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,13 +110,12 @@
 		AD6769D526380FA80029BFAB /* InnoTestDemoApp */ = {
 			isa = PBXGroup;
 			children = (
-				AD6769F626382C100029BFAB /* Service */,
-				AD6769EE26382BD70029BFAB /* API */,
 				AD6769D626380FA80029BFAB /* AppDelegate.swift */,
 				AD6769D826380FA80029BFAB /* SceneDelegate.swift */,
+				AD676A57263846CD0029BFAB /* Jsonplaceholder */,
+				AD6769F626382C100029BFAB /* Service */,
+				AD6769EE26382BD70029BFAB /* API */,
 				AD676A3D26383A180029BFAB /* Extension */,
-				AD6769DA26380FA80029BFAB /* ViewController.swift */,
-				AD676A2F263835A50029BFAB /* ViewModel.swift */,
 				AD6769DC26380FA80029BFAB /* Main.storyboard */,
 				AD6769DF26380FA80029BFAB /* Assets.xcassets */,
 				AD6769E126380FA80029BFAB /* LaunchScreen.storyboard */,
@@ -201,6 +207,25 @@
 			path = LoadingDialog;
 			sourceTree = "<group>";
 		};
+		AD676A57263846CD0029BFAB /* Jsonplaceholder */ = {
+			isa = PBXGroup;
+			children = (
+				AD676A592638470A0029BFAB /* ViewModel */,
+				AD6769DA26380FA80029BFAB /* JsonplaceholderVC.swift */,
+				AD676A34263839D10029BFAB /* JsonplaceholderTableViewCell.swift */,
+			);
+			path = Jsonplaceholder;
+			sourceTree = "<group>";
+		};
+		AD676A592638470A0029BFAB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD676A4B26383C320029BFAB /* TableViewModel.swift */,
+				AD676A2F263835A50029BFAB /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -217,6 +242,10 @@
 			dependencies = (
 			);
 			name = InnoTestDemoApp;
+			packageProductDependencies = (
+				AD676A5026383CD50029BFAB /* SnapKit */,
+				AD676A54263843F20029BFAB /* Kingfisher */,
+			);
 			productName = InnoTestDemoApp;
 			productReference = AD6769D326380FA80029BFAB /* InnoTestDemoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -244,6 +273,10 @@
 				Base,
 			);
 			mainGroup = AD6769CA26380FA80029BFAB;
+			packageReferences = (
+				AD676A4F26383CD50029BFAB /* XCRemoteSwiftPackageReference "SnapKit" */,
+				AD676A53263843F20029BFAB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = AD6769D426380FA80029BFAB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -284,13 +317,15 @@
 				AD676A0826382C100029BFAB /* NetworkRouter.swift in Sources */,
 				AD676A1326382C100029BFAB /* Router.swift in Sources */,
 				AD676A4226383AAB0029BFAB /* FCBaseDialog.swift in Sources */,
+				AD676A4C26383C320029BFAB /* TableViewModel.swift in Sources */,
 				AD676A23263832250029BFAB /* JsonplaceholderData.swift in Sources */,
 				AD676A0A26382C100029BFAB /* ParameterEncoding.swift in Sources */,
 				AD676A0926382C100029BFAB /* HTTPTask.swift in Sources */,
 				AD676A30263835A50029BFAB /* ViewModel.swift in Sources */,
+				AD676A35263839D10029BFAB /* JsonplaceholderTableViewCell.swift in Sources */,
 				AD676A22263832250029BFAB /* JsonplaceholderRequest.swift in Sources */,
 				AD676A1126382C100029BFAB /* Decisions.swift in Sources */,
-				AD6769DB26380FA80029BFAB /* ViewController.swift in Sources */,
+				AD6769DB26380FA80029BFAB /* JsonplaceholderVC.swift in Sources */,
 				AD676A1226382C100029BFAB /* BadResponseStatusCodeDecision.swift in Sources */,
 				AD676A0E26382C100029BFAB /* Observable.swift in Sources */,
 				AD6769D726380FA80029BFAB /* AppDelegate.swift in Sources */,
@@ -498,6 +533,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD676A4F26383CD50029BFAB /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		AD676A53263843F20029BFAB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD676A5026383CD50029BFAB /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD676A4F26383CD50029BFAB /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		AD676A54263843F20029BFAB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD676A53263843F20029BFAB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD6769CB26380FA80029BFAB /* Project object */;
 }

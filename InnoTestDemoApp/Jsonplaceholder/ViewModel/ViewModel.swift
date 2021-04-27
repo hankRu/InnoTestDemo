@@ -28,13 +28,16 @@ class JsonplaceholderViewModel: NSObject {
     func initFetch() {
         self.isLoading.value = true
         ApiManager.shared.getJsonplaceholder { [weak self] (result) in
-            guard let _ = self else { return }
+            guard let self = self else { return }
             switch result {
             case .success(let model):
-                print(model.first ?? "")
+                self.cellViewModels = model
+                self.filterModels = model
             case .failure(let error):
                 print("\(error)")
             }
+            self.reloadData.value = true
+            self.isLoading.value = false
         }
     }
     

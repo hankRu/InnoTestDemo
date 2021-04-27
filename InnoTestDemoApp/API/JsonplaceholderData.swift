@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct JsonplaceholderData: Codable {
+struct JsonplaceholderData: Codable, RowViewModel {
     let albumID, id: Int
     let title: String
     let url, thumbnailURL: String

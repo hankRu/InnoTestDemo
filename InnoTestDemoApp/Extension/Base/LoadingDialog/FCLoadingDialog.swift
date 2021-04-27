@@ -34,7 +34,12 @@ class FCLoadingDialog: FCBaseDialog {
     }
 
     func presentInWindow() {
-        let window:UIWindow = UIApplication.shared.delegate!.window!!
+        var window: UIWindow!
+        if let win = UIApplication.shared.delegate?.window {
+            window = win
+        } else {
+            window = UIApplication.shared.windows.first
+        }
         
         DispatchQueue.main.async(execute: {
             self.view.transform = CGAffineTransform(scaleX: 1, y: 1)
