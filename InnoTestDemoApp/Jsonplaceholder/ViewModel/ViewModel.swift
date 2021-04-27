@@ -42,6 +42,12 @@ class JsonplaceholderViewModel: NSObject {
     }
     
     func filterData(inputString: String) {
-        // TODO: 輸入搜尋
+        if inputString == "" {
+            filterModels = cellViewModels
+            self.reloadData.value = true
+            return
+        }
+        filterModels = cellViewModels.filter {$0.title.contains(inputString.lowercased())}
+        self.reloadData.value = true
     }
 }

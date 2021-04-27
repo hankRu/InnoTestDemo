@@ -20,7 +20,6 @@
 		AD676A0A26382C100029BFAB /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6769FB26382C100029BFAB /* ParameterEncoding.swift */; };
 		AD676A0B26382C100029BFAB /* Decision.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6769FC26382C100029BFAB /* Decision.swift */; };
 		AD676A0C26382C100029BFAB /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6769FD26382C100029BFAB /* Request.swift */; };
-		AD676A0D26382C100029BFAB /* Observables.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6769FF26382C100029BFAB /* Observables.swift */; };
 		AD676A0E26382C100029BFAB /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A0026382C100029BFAB /* Observable.swift */; };
 		AD676A0F26382C100029BFAB /* ParseResultDecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A0226382C100029BFAB /* ParseResultDecision.swift */; };
 		AD676A1026382C100029BFAB /* RetryDecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD676A0326382C100029BFAB /* RetryDecision.swift */; };
@@ -58,7 +57,6 @@
 		AD6769FB26382C100029BFAB /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 		AD6769FC26382C100029BFAB /* Decision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decision.swift; sourceTree = "<group>"; };
 		AD6769FD26382C100029BFAB /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		AD6769FF26382C100029BFAB /* Observables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observables.swift; sourceTree = "<group>"; };
 		AD676A0026382C100029BFAB /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		AD676A0226382C100029BFAB /* ParseResultDecision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseResultDecision.swift; sourceTree = "<group>"; };
 		AD676A0326382C100029BFAB /* RetryDecision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetryDecision.swift; sourceTree = "<group>"; };
@@ -161,7 +159,6 @@
 		AD6769FE26382C100029BFAB /* Observer */ = {
 			isa = PBXGroup;
 			children = (
-				AD6769FF26382C100029BFAB /* Observables.swift */,
 				AD676A0026382C100029BFAB /* Observable.swift */,
 			);
 			path = Observer;
@@ -308,7 +305,6 @@
 			files = (
 				AD676A4926383AD10029BFAB /* FCLoadingDialog.swift in Sources */,
 				AD676A38263839F30029BFAB /* UIViewExtensions.swift in Sources */,
-				AD676A0D26382C100029BFAB /* Observables.swift in Sources */,
 				AD676A0B26382C100029BFAB /* Decision.swift in Sources */,
 				AD676A1026382C100029BFAB /* RetryDecision.swift in Sources */,
 				AD676A0C26382C100029BFAB /* Request.swift in Sources */,

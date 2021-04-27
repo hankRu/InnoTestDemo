@@ -9,7 +9,7 @@ import UIKit
 
 protocol RowViewModel {}
 
-protocol CellConfigurable where Self: UITableViewCell {
+protocol CellConfigurable {
     func setup(viewModel: RowViewModel)
 }
 

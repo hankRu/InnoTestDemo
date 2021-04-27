@@ -7,16 +7,19 @@
 
 import UIKit
 
-class JsonplaceholderVC: UITableViewController {
+class JsonplaceholderVC: UITableViewController, UISearchResultsUpdating {
     
     lazy var vm: JsonplaceholderViewModel = {
         return JsonplaceholderViewModel()
     }()
     
+    var searchController: UISearchController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         bind(vm: vm)
         setupUI()
+        setupSearchController()
         vm.initFetch()
     }
     
@@ -41,6 +44,15 @@ class JsonplaceholderVC: UITableViewController {
 }
 
 extension JsonplaceholderVC {
+    // MARK: - UISearchResultsUpdating
+    func updateSearchResults(for searchController: UISearchController) {
+        if let searchText = searchController.searchBar.text {
+            vm.filterData(inputString: searchText)
+        }
+    }
+}
+
+extension JsonplaceholderVC {
     private func setupUI() {
         tableView.register(JsonplaceholderTableViewCell.self, forCellReuseIdentifier: JsonplaceholderTableViewCell.className)
         tableView.separatorStyle = .none
@@ -49,6 +61,15 @@ extension JsonplaceholderVC {
         tableView.scrollIndicatorInsets = UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0)
         tableView.setEmptyMessage("很抱歉，目前無資料")
         tableView.backgroundView?.isHidden = true
+        self.tableView.keyboardDismissMode = .onDrag
+    }
+    
+    private func setupSearchController(){
+        searchController = UISearchController(searchResultsController: nil)
+        tableView.tableHeaderView = searchController?.searchBar
+        searchController?.searchResultsUpdater = self
+        searchController?.searchBar.placeholder = "搜尋"
+        searchController?.obscuresBackgroundDuringPresentation = false
     }
 }
 
@@ -59,17 +80,13 @@ extension JsonplaceholderVC {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let rowViewModel = vm.filterModels[indexPath.row]
-        if let cell = tableView.dequeueReusableCell(withIdentifier: JsonplaceholderTableViewCell.className, for: indexPath) as? CellConfigurable
-        {
-            cell.setup(viewModel: rowViewModel)
-            return cell
-        } else {
-            return UITableViewCell()
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: JsonplaceholderTableViewCell.className, for: indexPath)
+        (cell as? CellConfigurable)?.setup(viewModel: vm.filterModels[indexPath.row])
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        searchController?.searchBar.endEditing(false)
         let rowViewModel = vm.filterModels[indexPath.row]
         print("\(rowViewModel.title)")
     }
